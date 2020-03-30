@@ -16,8 +16,8 @@
                 <h5 class="card-title">Information</h5>
                 <p class="card-text">
                     <c:choose>
-                        <c:when test="${not empty username}">
-                            Welcome back, <strong>${username}</strong>!
+                        <c:when test="${not empty user}">
+                            Welcome back, <strong>${user.getName()}</strong>!
                         </c:when>
                         <c:otherwise>
                             This is some example index file.

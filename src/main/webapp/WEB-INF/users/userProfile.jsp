@@ -10,14 +10,8 @@
 
 <div class="row">
     <div class="col-md-12">
-        <a href="account/edit" class="btn btn-primary float-right" style="margin-bottom: .725rem">Edit profile</a>
-    </div>
-</div>
-
-<div class="row">
-    <div class="col-md-12">
         <div class="jumbotron">
-            <h1 class="display-4">Hello, ${user.getName()}!</h1>
+            <h1 class="display-4">This is ${user.getName()}'s profile!</h1>
             <p class="lead">This is an example text you can use</p>
             <hr class="my-4">
             <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>

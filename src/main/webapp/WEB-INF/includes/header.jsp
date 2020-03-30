@@ -34,17 +34,17 @@
             <li class="nav-item ${empty pageName ? "active" : ""}">
                 <a class="nav-link" href="${pageContext.request.contextPath}">Home <span class="sr-only">(current)</span></a>
             </li>
-            <c:if test="${not empty username}">
+            <c:if test="${not empty user}">
             <li class="nav-item ${pageName eq "users" ? "active" : ""}">
                 <a class="nav-link" href="${pageContext.request.contextPath}/users">Users</a>
             </li>
             </c:if>
         </ul>
         <c:choose>
-            <c:when test="${not empty username}">
+            <c:when test="${not empty user}">
                 <ul class="navbar-nav ml-auto">
                    <li class="nav-item ${pageName eq "account" ? "active" : ""}">
-                       <a class="nav-link" href="${pageContext.request.contextPath}/account">${username}</a>
+                       <a class="nav-link" href="${pageContext.request.contextPath}/account">${user.getName()}</a>
                    </li>
                   <li class="nav-item">
                       <a class="nav-link" href="${pageContext.request.contextPath}/logout">Logout</a>

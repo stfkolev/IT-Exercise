@@ -38,6 +38,14 @@
         <servlet-name>Users</servlet-name>
         <url-pattern>/logout</url-pattern>
     </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Users</servlet-name>
+        <url-pattern>/user</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Users</servlet-name>
+        <url-pattern>/account/edit</url-pattern>
+    </servlet-mapping>
 
 
     <!-- Error Pages -->

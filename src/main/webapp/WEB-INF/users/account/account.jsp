@@ -7,7 +7,7 @@
   To change this template use File | Settings | File Templates.
 --%>
 
-<jsp:include page="../includes/header.jsp"/>
+<jsp:include page="../../includes/header.jsp"/>
 
 <c:if test="${not empty successMsg}">
     <div class="row">
@@ -71,4 +71,4 @@
     </div>
 </div>
 
-<jsp:include page="../includes/footer.jsp"/>
+<jsp:include page="../../includes/footer.jsp"/>

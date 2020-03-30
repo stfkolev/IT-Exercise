@@ -16,7 +16,7 @@
 <div class="row">
     <div class="col">
         <c:choose>
-            <c:when test="${not empty username}">
+            <c:when test="${not empty user}">
                 <c:choose>
                     <c:when test="${not empty users}">
                         <table class="table">

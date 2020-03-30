@@ -12,7 +12,7 @@ public class HomeController extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         if(req.getSession(false) != null) {
-            req.setAttribute("username", req.getSession().getAttribute("usrName"));
+            req.setAttribute("user", req.getSession().getAttribute("user"));
         }
 
         req.getRequestDispatcher("/WEB-INF/home/index.jsp").forward(req, resp);
